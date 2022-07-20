@@ -7,6 +7,11 @@ body {
   background: #8990ec;
 }
 
+h2 {
+  position: relative; 
+  top: 50px;
+}
+
 .wrapper {
   height: 525px;
   width: 360px;
@@ -28,6 +33,12 @@ body {
 .title {
   font-weight: bold;
   margin-bottom: 0.6rem;
+}
+
+.title-end {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
 .inputContainer {
@@ -95,4 +106,44 @@ body {
 
 .total {
   font-size: 2rem;
+}
+
+body {
+  overflow: hidden;
+}
+
+@media (max-width:415px) {
+  .wrapper{
+    height: 425px;
+    width: 310px;
+  }
+}
+
+@media (max-width:360px) {
+  .wrapper{
+    height: 400px;
+    width: 270px;
+  }
+}
+
+@media (max-width:320px) {
+  .wrapper{
+    height: 350px;
+    width: 250px;
+  }
+}
+@media (max-width:300px) {
+  .wrapper{
+    height: 350px;
+    width: 220px;
+  }
+}
+@media (max-width:267px) {
+  .wrapper{
+    height: 340px;
+    width: 210px;
+  }
+  .title-end {
+    font-size: 14px;
+  }
 }
